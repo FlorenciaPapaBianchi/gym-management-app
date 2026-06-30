@@ -16,7 +16,7 @@ La gestión manual de rutinas y pagos en gimnasios consume tiempo y es propensa 
 
 | Herramienta | Uso |
 |-------------|-----|
-| Python | Lógica de la aplicación |
+| Node.js | Lógica de la aplicación |
 | SQLite | Base de datos |
 
 ## 📁 Estructura del proyecto
@@ -24,11 +24,13 @@ La gestión manual de rutinas y pagos en gimnasios consume tiempo y es propensa 
 ```
 gym-management-app/
 ├── README.md
-├── main.py              # Punto de entrada
-├── database/
-│   └── gym.db          # Base de datos SQLite
-├── models/             # Modelos de datos
-└── utils/              # Funciones auxiliares
+├── INSTALAR.md          # Guía de instalación
+├── server.js            # Punto de entrada
+├── package.json
+├── public/              # Archivos estáticos (frontend)
+├── data/                # Base de datos SQLite (no incluida en el repo)
+├── iniciar.bat          # Script de inicio (Windows)
+└── iniciar.command      # Script de inicio (Mac)
 ```
 
 ## 🚀 Cómo ejecutar
@@ -39,11 +41,12 @@ git clone https://github.com/FlorenciaPapaBianchi/gym-management-app.git
 cd gym-management-app
 
 # Instalar dependencias
-pip install -r requirements.txt
+npm install
 
 # Ejecutar
-python main.py
+node server.js
 ```
+### Podés usar el script iniciar.bat (Windows) o iniciar.command (Mac) para iniciar la app directamente
 
 ## 📌 Estado del proyecto
 
